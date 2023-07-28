@@ -29,6 +29,7 @@ urlpatterns = [
     path('signup/', RegistrationView.as_view({'get': 'list', 'post': 'create'})),
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0),   name='schema-swagger-ui'),
     path('login/', Login),
+    # path('', signup, name='SignIn')
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
