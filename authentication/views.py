@@ -36,3 +36,7 @@ def Login(request):
         {"errors": "Invalid credentials"},
         status=400,
     )
+
+
+# def signup(request):
+#     return render(request, 'signup.html')
